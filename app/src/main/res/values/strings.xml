@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Find Your Movie</string>
+    <string name="search_hint">Movie</string>
+    <string name="search_button">Search</string>
+    <string-array name="streaming_platforms">
+        <item>Popular Movies</item>
+        <item>Netflix</item>
+        <item>Hulu</item>
+        <item>Crave</item>
+        <item>Disney +</item>
+    </string-array>
+    <string name="movie_error">Sorry we could not find your movie!</string>
+    <string name="help_hint">Need Help?</string>
+    <string name="about">About Us Page</string>
+    <string name="darkknight">The Dark Night</string>
+    <string name="database_error">Database disconnected</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stream_title">Streaming Platforms: </string>
+    <string name="cancel">Cancel</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="get_started_button">Get Started!</string>
+    <string name="landing_sentence1">Waste no time on movie night!</string>
+    <string name="landing_sentence2">Find movies from Netflix, Prime Video, Disney+, and Crave</string>
+</resources>

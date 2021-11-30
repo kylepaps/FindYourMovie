@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/popular_movies_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:text="@string/popular_movies"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/lobster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/popular_movies_title"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    
+    
+    
+    
+
+
+
+<!--    <Spinner-->
+<!--        android:id="@+id/dropdown_menu"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:clickable="true"-->
+<!--        android:spinnerMode="dropdown"-->
+<!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="375dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/dropdown_menu"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:paddingVertical="20dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/backtothefuture"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:clickable="true"-->
+<!--            android:src="@drawable/backtothefuture"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/goodfellas"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_toRightOf="@+id/backtothefuture"-->
+<!--            android:src="@drawable/goodfellas" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/inception"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_toRightOf="@+id/goodfellas"-->
+<!--            android:src="@drawable/inception" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/backtothefuture"-->
+<!--            android:text="Back To The Futute"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton2"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/goodfellas"-->
+<!--            android:layout_toRightOf="@+id/textButton"-->
+<!--            android:text="Goodfellas"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton3"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/inception"-->
+<!--            android:layout_toRightOf="@+id/textButton2"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:text="Inception"-->
+<!--            android:onClick="findMovie" />-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/joker"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_below="@id/textButton"-->
+<!--            android:src="@drawable/joker" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/jurassicpark"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_below="@id/textButton2"-->
+<!--            android:layout_toRightOf="@+id/joker"-->
+<!--            android:src="@drawable/jurassicpark" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/shawshankredemption"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_below="@id/textButton3"-->
+<!--            android:layout_toRightOf="@+id/jurassicpark"-->
+<!--            android:src="@drawable/shawshankredemption" />-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton4"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/joker"-->
+<!--            android:text="Joker"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton5"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/jurassicpark"-->
+<!--            android:layout_toRightOf="@+id/textButton"-->
+<!--            android:text="Jurassic Park"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton6"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/shawshankredemption"-->
+<!--            android:layout_toRightOf="@+id/textButton2"-->
+<!--            android:text="Shawshank Redemption"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thedarkknight"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_below="@id/textButton4"-->
+<!--            android:src="@drawable/thedarkknight" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thematrix"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_below="@+id/textButton5"-->
+<!--            android:layout_toRightOf="@+id/thedarkknight"-->
+<!--            android:src="@drawable/thematrix" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thewolfofwallstreet"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_below="@+id/textButton6"-->
+<!--            android:layout_toRightOf="@+id/thematrix"-->
+<!--            android:src="@drawable/thewolfofwallstreet" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton7"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/thedarkknight"-->
+<!--            android:text="The Dark Knight"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton8"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/thematrix"-->
+<!--            android:layout_toRightOf="@+id/textButton"-->
+<!--            android:text="The Matrix"-->
+<!--            android:onClick="findMovie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/textButton9"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_below="@id/thewolfofwallstreet"-->
+<!--            android:layout_toRightOf="@+id/textButton2"-->
+<!--            android:text="The Wolf Of Wall Street"-->
+<!--            android:onClick="findMovie" />-->
+
+
+<!--    </RelativeLayout>-->
+
+
+
+
+
+
+</RelativeLayout>

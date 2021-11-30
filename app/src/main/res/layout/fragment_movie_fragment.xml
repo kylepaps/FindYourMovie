@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".MovieFragment">
+
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/DarkBlue"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_name"
+        android:textColor="@color/DarkBlue"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/age_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/release_date"
+        android:textColor="@color/DarkBlue"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/movie_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_rating"
+        android:textColor="@color/DarkBlue"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/stream_title"
+        android:text="@string/stream_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_rating"
+        android:textColor="@color/DarkBlue"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"/>
+    <ListView
+        android:id="@+id/streams_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stream_title"
+        android:divider="@null"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:id="@+id/addWatchlistButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="Add to Watchlist"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryDarkColor">
+
+
+    </Button>
+
+
+
+</RelativeLayout>
